@@ -99,7 +99,12 @@ class ReCaptchaProvider
 			$params['remoteip'] = $remoteIp;
 		}
 
-		return @file_get_contents($this->buildUrl($params));
+		$response = wp_remote_get( $this->buildUrl($params) );
+		if(is_wp_error( $response ) ) {
+			return null;
+		}
+
+		return $response['body'];
 	}
 
 	/**
