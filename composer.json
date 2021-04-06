@@ -1,5 +1,5 @@
 {
-  "name": "contributte/recaptcha",
+  "name": "develtio/contributte/recaptcha",
   "description": "Google reCAPTCHA for Nette - Forms",
   "keywords": ["nette", "forms", "captcha", "recaptcha", "google"],
   "type": "library",
